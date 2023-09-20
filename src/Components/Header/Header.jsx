@@ -1,6 +1,6 @@
 export default function Header() {
     return (
-        <header className="w-full border-b-1 border-black p-2 px-10 grid grid-cols-3 border-b border-neutral-300">
+        <header className="w-full p-2 px-10 grid grid-cols-3 border-b border-neutral-300">
             <div className="flex items-center">
                 <h1 className="font-black text-2xl select-none cursor-pointer text-red-500">Store</h1>
             </div>
