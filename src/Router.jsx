@@ -4,7 +4,8 @@ import Error from './Components/Error/Error'
 import Home from './Pages/Home/Home'
 import Shop from './Pages/Shop/Shop'
 import Cart from './Pages/Cart/Cart'
-import ItemDetail from "./Pages/ItemDetail/ItemDetail"
+import ItemDetail, {loader as itemsLoader } from "./Pages/ItemDetail/ItemDetail"
+
 
 const Router = () => {
     const router = createBrowserRouter([
@@ -23,8 +24,8 @@ const Router = () => {
                 }, 
                 {
                     path: 'product/:name',
-                    element: <ItemDetail />
-                  
+                    element: <ItemDetail />,
+                    loader: itemsLoader,
                 },
                 {
                     path:'cart',
