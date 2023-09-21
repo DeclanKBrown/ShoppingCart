@@ -21,7 +21,7 @@ export default function Home() {
                 <div className='md:col-span-2'>
                     <div className='px-6 md:px-24 flex flex-col justify-items-center text-center md:text-left'>
                     <h1 className='font-semibold text-xl mb-4'>Ride the Waves with Confidence</h1>
-                    <span className='text-lg'>Discover the perfect surfboard for your next adventure. Whether you're a seasoned pro or just getting started, our wide range of high-quality surfboards is designed to make every wave an unforgettable experience. Dive into our collection and find the board that matches your style and skill level.</span>
+                    <span className='text-lg'>Discover the perfect surfboard for your next adventure. Whether youre a seasoned pro or just getting started, our wide range of high-quality surfboards is designed to make every wave an unforgettable experience. Dive into our collection and find the board that matches your style and skill level.</span>
                     </div>
                 </div>
             </div>
@@ -29,7 +29,7 @@ export default function Home() {
                 <div className='md:col-span-2'>
                     <div className='px-6 md:pr-20 flex flex-col text-center md:text-left'>
                     <h1 className='font-semibold text-xl mb-4'>Unleash Your Inner Surfer</h1>
-                    <span className='text-lg'>Embrace the sun, sea, and surf culture with our exceptional surfboards. Crafted with precision and passion, our boards are built to endure the most challenging waves. Whether you're chasing barrels or cruising the coastline, trust us to provide the ride of a lifetime. Dive into the surfboard paradise today!</span>
+                    <span className='text-lg'>Embrace the sun, sea, and surf culture with our exceptional surfboards. Crafted with precision and passion, our boards are built to endure the most challenging waves. Whether youre chasing barrels or cruising the coastline, trust us to provide the ride of a lifetime. Dive into the surfboard paradise today!</span>
                     </div>
                 </div>
                 <div className='md:col-span-1 flex justify-center'>
