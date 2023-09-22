@@ -7,8 +7,10 @@ import { useState } from 'react';
 export default function Root() {
     const [cart, setCart] = useState([])
     
-    function addToCart(item) {
-        setCart([...cart, item])
+    function addToCart(item, qty) {
+        const itemsToAdd = Array.from({ length: qty }, () => item);
+
+        setCart([...cart, ...itemsToAdd]);
     }
 
     return (
@@ -17,7 +19,7 @@ export default function Root() {
                 numItems={cart.length}
             />
             <Outlet 
-                addToCart={addToCart}
+                context={[addToCart]}
             />
             <Footer />
         </>

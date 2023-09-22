@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
+import PropTypes from "prop-types"
 
-export default function Header() {
+export default function Header({ numItems }) {
     return (
         <header className="w-full p-2 px-10 grid grid-cols-3 border-b border-neutral-300">
             <div className="flex items-center">
@@ -25,9 +26,16 @@ export default function Header() {
             </div>
             <div className="flex items-center justify-end">
                 <Link to={'/cart'}>
-                    <svg className='cursor-pointer' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    <span className="absolute top-2 right-8 bg-red-500 rounded-full w-6 h-6 flex items-center justify-center text-white text-xs">
+                        {numItems}
+                    </span>
                 </Link>
             </div>
         </header>
     )
+}
+
+Header.propTypes = {
+    numItems: PropTypes.number
 }
